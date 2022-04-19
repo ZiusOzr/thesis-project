@@ -1,20 +1,15 @@
-* {
+.app {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-.app {
     display: grid;
-    height: 100vh;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: min-content 1fr min-content;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
 }
 
 .header {
-    grid-column: 2 / 4;
+    grid-column: 2 / 5;
     grid-row: 1;
     display: flex;
     align-items: center;
@@ -32,7 +27,7 @@
 .accordion {
     background-color: #000000;
     grid-column: 1;
-    grid-row: 1 / 4;
+    grid-row: 1 / 3;
     padding: 15px 25px;
 }
 
@@ -55,7 +50,7 @@ a {
 }
 
 .content {
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
     grid-row: 2;
     background-color: #202020;
 }
@@ -97,5 +92,5 @@ h3 {
     background-color: #181818;
     height: 70px;
     grid-row: 4;
-    grid-column: 1 / 3;
+    grid-column: 1 / 5;
 }
