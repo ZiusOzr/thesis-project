@@ -3,35 +3,107 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylessheet" href="/thesis-project/src/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Spotify</title>
   </head>
-  <body>
+  <body class="app" link="white" alink="white" vlink="white">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="root">
+    </div>
+    <header class="header__menu">
+      <a href="/" class="a__style header__button"><img src="./img/back.svg" alt="Назад" width="24" height="24"></a>
+      <a href="/" class="a__style header__button"><img src="./img/more-than.svg" alt="Вперед" width="24" height="24"></a>
+      <a href="/" class="a__style header__button change-tariff"><span>СМЕНИТЬ ТАРИФ</span></a>
+      <a href="/" class="a__style header__button">
+        <img src="./img/user.svg" alt="user" width="24" height="24">
+        <span>User</span>
+      </a>
+    </header>
+    <aside class="accordion">
+      <a href="/" class="a__style link">
+        <img src="./img/spotify-icon-marilyn-scott-0.svg" alt="logo" width="177" height="52">
+      </a>
+      <nav class="menu">
+        <ul class="accordion__ul">
+          <li class="acordion__li">
+            <a href="/" class="a__style">
+              <img src="./img/gingerbread-house.svg" alt="house" class="menu__icon">
+              <span>Главная</span>
+            </a>
+          </li>
+          <li class="acordion__li">
+            <a href="/" class="a__style">
+              <img src="./img/search--v1.svg" alt="search" class="menu__icon">
+              <span>Поиск</span>
+            </a>
+          </li>
+          <li class="acordion__li">
+            <a href="/" class="a__style">
+              <img src="./img/music-library--v1.svg" alt="library" class="menu__icon">
+              <span>Моя медиатека</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <hr align="center" width="200" size="1" color="#181818">
+      <nav class="menu">
+        <ul class="accordion__ul">
+          <li class="acordion__li">
+            <a href="/" class="a__style">
+              <img src="./img/filled-plus-2-math.svg" alt="plus" class="menu__icon">
+              <span>Создать плейлист</span>
+            </a>
+          </li>
+          <li class="acordion__li">
+            <a href="/" class="a__style">
+              <img src="./img/filled-heart.svg" alt="heart" class="menu__icon">
+              <span>Любимые треки</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <hr align="center" width="200" size="1" color="#181818">
+    </aside>
+    <main class="content">
+      <h2 class="h2__content">Недавно прослушано</h2>
+      <div class="content__container">
+        <article class="content__article">
+          <img src="./img/UG0ZOziFKuw.jpg" alt="playlist-cover" class="playlist-cover">
+          <h3 class="content__h3">Электроника для гейминга</h3>
+        </article>
+      </div>
+      <h2 class="h2__content">Выпуски для тебя</h2>
+      <div class="content__container">
+        <article class="content__article">
+          <img src="./img/_GlhKYX4HSM.jpg" alt="playlist-cover" class="playlist-cover">
+          <h3 class="content__h3">Английский по песням</h3>
+        </article>
+        <article class="content__article">
+          <img src="./img/20TeSxqhNBo.jpg" alt="playlist-cover" class="playlist-cover">
+          <h3 class="content__h3">Правило 54</h3>
+        </article>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        <article class="content__article">
+          <img src="./img/UG0ZOziFKuw.jpg" alt="playlist-cover" class="playlist-cover">
+          <h3 class="content__h3">Электроника для гейминга</h3>
+        </article>
+        <article class="content__article">
+          <img src="./img/UG0ZOziFKuw.jpg" alt="playlist-cover" class="playlist-cover">
+          <h3 class="content__h3">Электроника для гейминга</h3>
+        </article>
+        <article class="content__article">
+          <img src="./img/UG0ZOziFKuw.jpg" alt="playlist-cover" class="playlist-cover">
+          <h3 class="content__h3">Электроника для гейминга</h3>
+        </article>
+        
+      </div>
+    </main>
+    <footer class="turntable"></footer> 
   </body>
 </html>
